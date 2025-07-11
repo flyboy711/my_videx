@@ -1,0 +1,431 @@
+/opt/anaconda3/envs/videx_py39/bin/python /Users/admin/Downloads/Codes/Videx_MySQL8/videx_server/test/mytest/demo_http.py
+开始负载测试: http://127.0.0.1:5001/ask_videx
+配置: 100 并发, 200 总请求数
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0260s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0329s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0264s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0488s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0413s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0566s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0532s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0753s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0753s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0717s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0776s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0799s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0848s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0866s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0950s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0933s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0903s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1015s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1037s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1125s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1179s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1191s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1145s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1272s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1327s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1662s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1671s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1662s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1731s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1650s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1793s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1773s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1574s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1818s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1760s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1378s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1704s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1863s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1664s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1674s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1663s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1572s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1655s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1429s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1637s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1654s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1668s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1679s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1690s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1714s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1704s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1720s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1730s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1711s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1750s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.2001s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1736s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1712s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1711s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1733s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1755s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1731s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1730s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1743s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1764s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1781s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1776s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1771s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1857s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1781s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1770s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1771s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1785s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1796s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1804s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1806s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1821s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1830s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1836s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1837s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1827s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1820s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1830s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1860s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1868s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1873s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1854s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1921s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1854s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1833s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1862s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1842s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1852s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1890s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1863s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1896s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1867s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.2279s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1859s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1882s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1863s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1890s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1926s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1921s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1918s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1885s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1907s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1968s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1965s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1937s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1932s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1933s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1930s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1950s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1957s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1969s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1978s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1984s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1979s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1963s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1927s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1893s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1897s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1841s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1531s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1496s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1547s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1482s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1510s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1503s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1496s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1485s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1483s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1490s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1489s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1499s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1508s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1508s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1521s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1499s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1506s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1477s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1480s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1466s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1493s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1094s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.2418s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1498s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1495s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1498s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1494s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1489s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1496s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1492s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1483s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1509s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1505s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1477s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1499s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1447s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1496s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1444s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1470s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1471s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1488s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1480s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1503s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1466s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1461s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1447s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1461s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1462s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1447s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1434s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1463s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1459s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1449s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1888s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0860s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1454s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1450s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1446s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1471s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1471s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1473s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1455s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1454s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1466s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1467s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1449s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1466s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1461s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1494s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1490s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1389s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1424s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1431s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1405s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1436s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1410s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1392s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1389s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1375s
+
+
+
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1414s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1480s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1487s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1485s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1478s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1448s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1439s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1437s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1444s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1432s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1452s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1454s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1447s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1445s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1457s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1034s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1482s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1488s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1476s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1460s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1451s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1462s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1437s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1443s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1467s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1442s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1419s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1437s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1458s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1469s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1448s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1448s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1466s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1469s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1460s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1447s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1147s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1431s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1457s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1465s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1487s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1483s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1506s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1149s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1491s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1484s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1491s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1484s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1460s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1494s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1488s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1494s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1489s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1450s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1469s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1447s
+
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1462s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0982s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1551s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1528s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1499s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0931s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1475s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1497s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1488s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1538s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0882s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1875s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1511s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1494s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1516s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1490s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1493s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1486s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1485s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1490s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1482s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1480s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1503s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1498s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1508s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1525s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1513s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1505s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1513s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1497s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1508s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1943s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1474s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1473s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1501s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1526s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1559s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1540s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1560s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1553s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1567s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1576s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1568s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1554s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1481s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1460s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1453s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1433s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1424s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1434s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1444s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1411s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1463s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1423s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1406s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.2023s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1365s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1357s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1327s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1343s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1322s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1327s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1308s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1350s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1323s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1308s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1317s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1319s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1295s
+
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1285s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1237s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1247s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1195s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1224s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1268s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1196s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1180s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1772s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1187s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1180s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1177s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1203s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1162s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1152s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1154s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1130s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1108s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.2253s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1106s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1087s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1056s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1077s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1075s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1040s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1009s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.1004s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.1005s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0992s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0995s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0993s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0987s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0972s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0945s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0929s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0923s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0880s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0889s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0872s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0870s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0848s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0863s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0844s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0810s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0836s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0836s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0792s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0788s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0783s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0783s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0780s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0775s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0779s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0756s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0718s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0677s
+
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0744s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0689s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0680s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0673s成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0681s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0672s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0659s成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0679s
+
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0655s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0666s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0637s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0616s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0596s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0574s
+成功响应: {'code': 200, 'data': {'value': '161'}, 'message': 'OK'} | 耗时: 0.0563s
+成功响应: {'code': 200, 'data': {'value': '134217728'}, 'message': 'OK'} | 耗时: 0.0575s
+
+===== 负载测试报告 =====
+测试时间: 2025-06-30 10:47:39
+接口地址: http://127.0.0.1:5001/ask_videx
+并发数: 100
+总请求数: 400
+成功请求数: 400
+错误率: 0.00%
+测试持续时间: 0.66 秒
+QPS: 608.30
+
+===== 响应时间统计 =====
+最小响应时间: 0.0260 秒
+最大响应时间: 0.2418 秒
+平均响应时间: 0.1414 秒
+
+----- 响应时间分位数 -----
+50% (中位数): 0.1472 秒
+90%: 0.1862 秒
+95%: 0.1926 秒
+99%: 0.2002 秒
+
+===== HTTP 状态码分布 =====
+状态码 200: 400 次请求 (100.00%)
+详细报告已保存至: load_test_report_20250630_104738.txt
+Performance chart saved to: load_test_metrics_20250630_104738.png
+
+进程已结束，退出代码为 0

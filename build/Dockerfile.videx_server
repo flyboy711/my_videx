@@ -1,0 +1,16 @@
+# 基于 Videx_Optimizer 构建Python服务
+FROM videx_opt_centos:latest
+
+WORKDIR /root
+
+# 只复制Python服务代码（不包含C++构建文件）
+COPY videx_server /root/videx_server
+
+WORKDIR /root/videx_server/build
+
+# 初始化并启动服务
+RUN chmod +x *.sh
+
+EXPOSE 13308 5001 5002
+
+CMD ["./start_server.sh"]

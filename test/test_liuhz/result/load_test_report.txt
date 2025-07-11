@@ -1,0 +1,36 @@
+
+===== Performance Test Report =====
+Test Time: 2025-07-07 10:00:08
+API Endpoint: http://127.0.0.1:5001/ask_videx
+Concurrency: 100
+Total Requests: 8000
+Successful Requests: 8000
+Error Rate: 0.00%
+Test Duration: 18.22 seconds
+QPS: 439.10
+
+===== System Resource Usage =====
+CPU Usage: Min 0.00%, Max 83.30%, Avg 16.58%
+Memory Usage: Min 80.20%, Max 81.00%, Avg 80.63%
+
+===== Response Time Statistics =====
+Min Response Time: 0.0503 seconds
+Max Response Time: 0.4765 seconds
+Avg Response Time: 0.2267 seconds
+
+----- Response Time Percentiles -----
+50% (median): 0.2323 seconds
+90%: 0.3173 seconds
+95%: 0.3336 seconds
+99%: 0.3878 seconds
+
+===== HTTP Status Code Distribution =====
+Status Code 200: 8000 requests (100.00%)
+
+===== Disk I/O Statistics =====
+Read Bytes: 917504
+Write Bytes: 434176
+Read Count: 40
+Write Count: 24
+Read Time (ms): 19
+Write Time (ms): 3

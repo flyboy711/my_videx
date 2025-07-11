@@ -1,0 +1,91 @@
+/opt/anaconda3/envs/videx_py39/bin/python /Users/admin/Downloads/Codes/Videx_MySQL8/videx_server/test/mytest/get_histogram.py
+获取到 5 个数据库的统计信息
+
+=== 表 videx_tpch_tiny.t_users 的统计信息 ===
+
+表级统计信息:
+  - 基数 (Cardinality): N/A
+
+列级统计信息:
+
+- 列 'age':
+  - 基数: N/A
+  - NDV (唯一值数量): 56.0
+  - 数据类型: N/A
+  - 直方图:
+    - 桶数量: 16
+    - 数据样本 (最多显示5个):
+      桶 1: 值={'cum_freq': 0.05393, 'max_value': 17, 'min_value': 15, 'row_count': 3.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 2: 值={'cum_freq': 0.1248, 'max_value': 21, 'min_value': 18, 'row_count': 4.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 3: 值={'cum_freq': 0.17882, 'max_value': 24, 'min_value': 22, 'row_count': 3.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 4: 值={'cum_freq': 0.25043, 'max_value': 28, 'min_value': 25, 'row_count': 4.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 5: 值={'cum_freq': 0.3053, 'max_value': 31, 'min_value': 29, 'row_count': 3.0, 'size': 0}, 频率=N/A, NDV=N/A
+      ... 共 16 个桶
+
+- 列 'city':
+  - 基数: N/A
+  - NDV (唯一值数量): 12.0
+  - 数据类型: N/A
+  - 直方图:
+    - 桶数量: 12
+    - 数据样本 (最多显示5个):
+      桶 1: 值={'cum_freq': 0.08431, 'max_value': '上海', 'min_value': '上海', 'row_count': 1.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 2: 值={'cum_freq': 0.16836, 'max_value': '北京', 'min_value': '北京', 'row_count': 1.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 3: 值={'cum_freq': 0.25068, 'max_value': '南京', 'min_value': '南京', 'row_count': 1.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 4: 值={'cum_freq': 0.33473, 'max_value': '天津', 'min_value': '天津', 'row_count': 1.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 5: 值={'cum_freq': 0.4193, 'max_value': '广州', 'min_value': '广州', 'row_count': 1.0, 'size': 0}, 频率=N/A, NDV=N/A
+      ... 共 12 个桶
+
+- 列 'created_at':
+  - 基数: N/A
+  - NDV (唯一值数量): 1459.0
+  - 数据类型: N/A
+  - 直方图:
+    - 桶数量: 16
+    - 数据样本 (最多显示5个):
+      桶 1: 值={'cum_freq': 0.0622, 'max_value': '2024-07-19 02:25:50.000000', 'min_value': '2024-06-26 02:25:50.000000', 'row_count': 93.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 2: 值={'cum_freq': 0.12499, 'max_value': '2024-08-10 02:25:52.000000', 'min_value': '2024-07-19 02:25:51.000000', 'row_count': 90.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 3: 值={'cum_freq': 0.18711, 'max_value': '2024-09-02 02:25:51.000000', 'min_value': '2024-08-10 02:25:53.000000', 'row_count': 91.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 4: 值={'cum_freq': 0.24975, 'max_value': '2024-09-25 02:25:52.000000', 'min_value': '2024-09-02 02:25:52.000000', 'row_count': 93.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 5: 值={'cum_freq': 0.31244, 'max_value': '2024-10-18 02:25:52.000000', 'min_value': '2024-09-25 02:25:53.000000', 'row_count': 92.0, 'size': 0}, 频率=N/A, NDV=N/A
+      ... 共 16 个桶
+
+- 列 'id':
+  - 基数: N/A
+  - NDV (唯一值数量): 100000.0
+  - 数据类型: N/A
+  - 直方图:
+    - 桶数量: 16
+    - 数据样本 (最多显示5个):
+      桶 1: 值={'cum_freq': 0.06249, 'max_value': 6249, 'min_value': 1, 'row_count': 6249.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 2: 值={'cum_freq': 0.12498, 'max_value': 12498, 'min_value': 6250, 'row_count': 6249.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 3: 值={'cum_freq': 0.18747, 'max_value': 18747, 'min_value': 12499, 'row_count': 6249.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 4: 值={'cum_freq': 0.24996, 'max_value': 24996, 'min_value': 18748, 'row_count': 6249.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 5: 值={'cum_freq': 0.31245, 'max_value': 31245, 'min_value': 24997, 'row_count': 6249.0, 'size': 0}, 频率=N/A, NDV=N/A
+      ... 共 16 个桶
+
+- 列 'is_active':
+  - 基数: N/A
+  - NDV (唯一值数量): 2.0
+  - 数据类型: N/A
+  - 直方图:
+    - 桶数量: 2
+    - 数据样本 (最多显示5个):
+      桶 1: 值={'cum_freq': 0.29895, 'max_value': 0, 'min_value': 0, 'row_count': 1.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 2: 值={'cum_freq': 1.0, 'max_value': 1, 'min_value': 1, 'row_count': 1.0, 'size': 0}, 频率=N/A, NDV=N/A
+
+- 列 'name':
+  - 基数: N/A
+  - NDV (唯一值数量): 4601.0
+  - 数据类型: N/A
+  - 直方图:
+    - 桶数量: 16
+    - 数据样本 (最多显示5个):
+      桶 1: 值={'cum_freq': 0.06266, 'max_value': '冯李韩', 'min_value': '何何何', 'row_count': 288.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 2: 值={'cum_freq': 0.12537, 'max_value': '吕何朱', 'min_value': '冯杨吴', 'row_count': 289.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 3: 值={'cum_freq': 0.1881, 'max_value': '吴杨蒋', 'min_value': '吕何杨', 'row_count': 289.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 4: 值={'cum_freq': 0.25084, 'max_value': '孙何张', 'min_value': '吴杨褚', 'row_count': 287.0, 'size': 0}, 频率=N/A, NDV=N/A
+      桶 5: 值={'cum_freq': 0.31347, 'max_value': '尤杨张', 'min_value': '孙何施', 'row_count': 287.0, 'size': 0}, 频率=N/A, NDV=N/A
+      ... 共 16 个桶
+
+进程已结束，退出代码为 0

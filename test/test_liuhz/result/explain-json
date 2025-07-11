@@ -1,0 +1,121 @@
+{
+  "query_block": {
+    "select_id": 1,
+    "cost_info": {
+      "query_cost": "0.71"
+    },
+    "table": {
+      "table_name": "t_users",
+      "access_type": "range",
+      "possible_keys": [
+        "idx_city_age"
+      ],
+      "key": "idx_city_age",
+      "used_key_parts": [
+        "city"
+      ],
+      "key_length": "203",
+      "rows_examined_per_scan": 1,
+      "rows_produced_per_join": 0,
+      "filtered": "5.00",
+      "index_condition": "((`videx_tpch_tiny`.`t_users`.`city` like '北%') and (`videx_tpch_tiny`.`t_users`.`age` > 20))",
+      "cost_info": {
+        "read_cost": "0.70",
+        "eval_cost": "0.01",
+        "prefix_cost": "0.71",
+        "data_read_per_join": "20"
+      },
+      "used_columns": [
+        "id",
+        "name",
+        "age",
+        "city",
+        "is_active",
+        "created_at"
+      ],
+      "attached_condition": "(`videx_tpch_tiny`.`t_users`.`is_active` = 1)"
+    }
+  }
+}
+
+
+
+
+
+
+
+
+=========================
+
+{
+  "query_block": {
+    "select_id": 1,
+    "cost_info": {
+      "query_cost": "0.71"
+    },
+    "table": {
+      "table_name": "t_users",
+      "access_type": "range",
+      "possible_keys": [
+        "idx_active_city_age"
+      ],
+      "key": "idx_active_city_age",
+      "used_key_parts": [
+        "is_active",
+        "city"
+      ],
+      "key_length": "204",
+      "rows_examined_per_scan": 1,
+      "rows_produced_per_join": 0,
+      "filtered": "33.33",
+      "index_condition": "((`videx_tpch_tiny`.`t_users`.`is_active` = 1) and (`videx_tpch_tiny`.`t_users`.`city` like '北%') and (`videx_tpch_tiny`.`t_users`.`age` > 20))",
+      "cost_info": {
+        "read_cost": "0.68",
+        "eval_cost": "0.03",
+        "prefix_cost": "0.71",
+        "data_read_per_join": "138"
+      },
+      "used_columns": [
+        "id",
+        "name",
+        "age",
+        "city",
+        "is_active",
+        "created_at"
+      ]
+    }
+  }
+}
+
+==================================================================================================
+
+{
+  "query_block": {
+    "select_id": 1,
+    "cost_info": {
+      "query_cost": "10096.45"
+    },
+    "table": {
+      "table_name": "t_users",
+      "access_type": "ALL",
+      "rows_examined_per_scan": 100082,
+      "rows_produced_per_join": 370,
+      "filtered": "0.37",
+      "cost_info": {
+        "read_cost": "10059.39",
+        "eval_cost": "37.06",
+        "prefix_cost": "10096.45",
+        "data_read_per_join": "150K"
+      },
+      "used_columns": [
+        "id",
+        "name",
+        "age",
+        "city",
+        "is_active",
+        "created_at"
+      ],
+      "attached_condition": "((`videx_tpch_tiny`.`t_users`.`is_active` = 1) and (`videx_tpch_tiny`.`t_users`.`city` like '北%') and (`videx_tpch_tiny`.`t_users`.`age` > 20))"
+    }
+  }
+}

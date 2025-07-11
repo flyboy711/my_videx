@@ -1,0 +1,102 @@
+/opt/anaconda3/envs/videx_py39/bin/python /Users/admin/Downloads/Codes/Videx_MySQL8/videx_server/test/mytest/demo_select_opt.py
+启动索引调优...
+成功连接到数据库: 127.0.0.1:13308/videx_tpch_tiny
+表 t_users 使用的存储引擎: VIDEX
+获取到 0 个非主键索引
+为列 ['is_active', 'city', 'age'] 生成索引候选项...
+生成了 21 个索引候选项
+
+============== 测试无索引情况 =================
+测试索引: 无索引
+发现新最优索引:
+索引: 无索引
+总成本: 10096.45
+CPU成本: 37.06
+IO成本: 10059.39
+无索引成本: 10096.45
+
+========== 开始测试所有索引组合 ============
+测试索引: is_active
+发现新最优索引:
+索引: is_active
+总成本: 7280.95
+CPU成本: 259.81
+IO成本: 264.75
+实际使用索引: idx_temp_l6257r
+索引 is_active 成本: 7280.95
+测试索引: city
+发现新最优索引:
+索引: city
+总成本: 3796.91
+CPU成本: 28.12
+IO成本: 3768.79
+实际使用索引: idx_temp_nu2d8u
+索引 city 成本: 3796.91
+测试索引: age
+索引 age 成本: 10096.45
+测试索引: is_active, city
+发现新最优索引:
+索引: is_active, city
+总成本: 2662.01
+CPU成本: 197.15
+IO成本: 2464.86
+实际使用索引: idx_temp_nvxofw
+索引 is_active_city 成本: 2662.01
+测试索引: is_active, age
+索引 is_active_age 成本: 10096.45
+测试索引: city, is_active
+索引 city_is_active 成本: 3796.91
+测试索引: city, age
+发现新最优索引:
+索引: city, age
+总成本: 0.71
+CPU成本: 0.01
+IO成本: 0.70
+实际使用索引: idx_temp_4ena82
+索引 city_age 成本: 0.71
+测试索引: age, is_active
+索引 age_is_active 成本: 10096.45
+测试索引: age, city
+索引 age_city 成本: 10096.45
+测试索引: is_active, city, age
+索引 is_active_city_age 成本: 0.71
+测试索引: is_active, age, city
+索引 is_active_age_city 成本: 10096.45
+测试索引: city, is_active, age
+索引 city_is_active_age 成本: 0.71
+测试索引: city, age, is_active
+索引 city_age_is_active 成本: 0.71
+测试索引: age, is_active, city
+索引 age_is_active_city 成本: 10096.45
+测试索引: age, city, is_active
+索引 age_city_is_active 成本: 10096.45
+测试索引: is_active, city, age
+索引 is_active_city_age 成本: 0.71
+测试索引: is_active, age, city
+索引 is_active_age_city 成本: 10096.45
+测试索引: city, is_active, age
+索引 city_is_active_age 成本: 0.71
+测试索引: city, age, is_active
+索引 city_age_is_active 成本: 0.71
+测试索引: age, is_active, city
+索引 age_is_active_city 成本: 10096.45
+测试索引: age, city, is_active
+索引 age_city_is_active 成本: 10096.45
+数据库连接已关闭
+
+=== 最终结果 ===
+最优索引: city, age
+总成本: 0.71
+CPU成本: 0.01
+IO成本: 0.70
+
+===== 最优索引方案 =====
+SQL: SELECT * FROM t_users WHERE is_active = 1 AND city LIKE '北%' AND age > 20
+表: t_users
+表使用的存储引擎: VIDEX
+最优索引DDL: CREATE INDEX idx_city_age ON t_users (city, age)
+总成本: 0.71
+CPU成本: 0.01
+IO成本: 0.70
+
+进程已结束，退出代码为 0

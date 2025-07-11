@@ -1,0 +1,34 @@
+# 第一阶段：构建C++部分
+FROM videx_build_c:latest AS builder
+
+WORKDIR /root
+
+# 复制MySQL源码文件
+COPY mysql_server /root/mysql_server
+COPY videx_server/build/config.sh /root/videx_server/build/
+COPY videx_server/src/mysql/videx /root/videx_server/src/mysql/videx
+COPY videx_server/build/build_c.sh /root/videx_server/build/
+
+# 构建
+WORKDIR /root/videx_server/build
+RUN chmod +x *.sh && \
+    ./build_c.sh
+
+# 收集依赖
+RUN mkdir -p /root/mysql_server/mysql_build_output/lib64 && \
+    cp /usr/local/gcc-9.3.0/lib64/libstdc++.so* /root/mysql_server/mysql_build_output/lib64/ && \
+    cp /usr/local/gcc-9.3.0/lib64/libgcc_s.so* /root/mysql_server/mysql_build_output/lib64/
+
+# 最终C++基础镜像
+FROM videx_build_c:latest
+
+WORKDIR /root
+
+COPY --from=builder /root/mysql_server/mysql_build_output /root/mysql_server/mysql_build_output
+COPY videx_server /root/videx_server
+
+WORKDIR /root/videx_server/build
+
+RUN chmod +x *.sh
+
+RUN ./init_server.sh

@@ -1,0 +1,7 @@
+python src/sub_platforms/sql_opt/videx/scripts/videx_build_env.py \
+--fetch_method fetch \
+--tables timeout_record_31 \
+--target \
+rm-uf6pyrv408i5f0gap.mysql.rds.aliyuncs.com:3306:du_trade_timeout_db_3:onedba:S9dKSCsdJm\(mKd2  \
+--videx 127.0.0.1:13308:videx_remote:videx:password \
+--videx_server=127.0.0.1:5001

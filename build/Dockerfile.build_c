@@ -1,0 +1,125 @@
+# build GCC
+FROM centos:7 AS gcc-builder
+
+# 使用 vault 源
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*.repo && \
+    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*.repo && \
+    yum clean all && yum makecache fast
+
+# 定义环境变量（推荐使用最新的稳定版 GCC）
+ENV GCC_VERSION=9.3.0
+ENV LD_LIBRARY_PATH=/usr/local/lib
+ENV MAKE_JOBS=$(nproc)
+
+# 安装所有必需依赖项
+RUN yum update -y && yum install -y wget make tar gzip bzip2 perl \
+    gcc gcc-c++ gmp-devel mpfr-devel mpc-devel libmpc-devel zlib-devel libstdc++-devel && \
+    yum clean all
+
+# 创建工作目录
+WORKDIR /build
+
+# 下载、配置和构建 GCC
+RUN wget https://mirrors.aliyun.com/gnu/gcc/gcc-${GCC_VERSION}/gcc-${GCC_VERSION}.tar.gz && \
+    tar -xf gcc-${GCC_VERSION}.tar.gz && \
+    cd gcc-${GCC_VERSION} && \
+    ( ./contrib/download_prerequisites --no-verify || \
+      sed -i 's|http://gcc\.gnu\.org|https://mirrors.aliyun.com/gnu|g' ./contrib/download_prerequisites && \
+      ./contrib/download_prerequisites --no-verify ) && \
+    mkdir build && cd build && \
+    ../configure \
+        --prefix=/usr/local/gcc-${GCC_VERSION} \
+        --with-gmp=/usr/lib64 \
+        --with-mpfr=/usr/lib64 \
+        --with-mpc=/usr/lib64 \
+        --disable-multilib \
+        --enable-languages=c,c++ \
+        --disable-bootstrap \
+        --disable-nls \
+        --disable-werror && \
+    (make -j${MAKE_JOBS} || make -j4) && \
+    make install-strip DESTDIR=/gcc-install && \
+    cd /build && \
+    rm -rf gcc-${GCC_VERSION}* build
+
+
+# build Bison
+FROM centos:7 AS bison-builder
+
+# 使用 vault 源
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*.repo && \
+    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*.repo && \
+    yum clean all && yum makecache fast
+
+
+ENV BISON_VERSION=3.4.2
+RUN yum install -y wget make gcc flex m4 perl && yum clean all
+
+WORKDIR /build
+RUN wget --no-check-certificate https://ftp.gnu.org/gnu/bison/bison-${BISON_VERSION}.tar.gz \
+    && tar -xf bison-${BISON_VERSION}.tar.gz \
+    && cd bison-${BISON_VERSION} \
+    && ./configure --prefix=/usr/local \
+    && make -j $(nproc) \
+    && make install DESTDIR=/bison-install \
+    && cd /build && rm -rf *
+
+# final stage
+FROM centos:7
+
+# 使用 vault 源
+RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-*.repo && \
+    sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-*.repo && \
+    yum clean all && yum makecache fast
+
+COPY --from=gcc-builder /gcc-install/usr/local/gcc-9.3.0 /usr/local/gcc-9.3.0
+COPY --from=bison-builder /bison-install/usr/local/bin/bison /usr/local/bin/bison
+COPY --from=bison-builder /bison-install/usr/local/lib/liby.* /usr/local/lib/
+COPY --from=bison-builder /bison-install/usr/local/share/bison /usr/local/share/bison
+
+# online required part
+RUN yum install -y sudo wget make gcc gcc-c++ glibc-devel curl mpfr libmpc m4 pkgconfig git \
+    glibc-static libstdc++-devel libstdc++-static \
+    gmp-devel mpfr-devel libmpc-devel \
+    zlib-devel bzip2 \
+    openssl-devel ncurses-devel readline-devel \
+    libcurl-devel libtirpc-devel \
+    openldap-devel cyrus-sasl-devel cyrus-sasl-vcram \
+    cyrus-sasl-scram libaio-devel libevent-devel libicu-devel \
+    protobuf-devel && yum clean all && rm -rf /var/lib/apt/lists/*
+
+# 配置 Python 和其他工具
+RUN ln -sf /usr/local/gcc-9.3.0/bin/gcc /usr/local/bin/gcc
+
+# 安装CMake
+RUN ARCH="x86_64" && \
+    yum remove -y cmake3 || true && \
+    curl -L "https://github.com/Kitware/CMake/releases/download/v3.12.4/cmake-3.12.4-Linux-x86_64.sh" -o cmake.sh && \
+    sh cmake.sh --skip-license --prefix=/usr/local --exclude-subdir && \
+    rm cmake.sh && \
+    ln -sf /usr/local/bin/cmake /usr/bin/cmake && \
+    ln -sf /usr/local/bin/cmake /usr/bin/cmake3
+
+
+# 从源码编译安装 Python 3.9
+RUN yum install -y make gcc openssl-devel bzip2-devel libffi-devel zlib-devel && \
+    curl -O https://www.python.org/ftp/python/3.9.16/Python-3.9.16.tgz && \
+    tar xzf Python-3.9.16.tgz && \
+    cd Python-3.9.16 && \
+    ./configure --enable-optimizations && \
+    make altinstall && \
+    cd .. && rm -rf Python-3.9.16* && \
+    ln -sf /usr/local/bin/python3.9 /usr/bin/python3 && \
+    ln -sf /usr/local/bin/python3.9 /usr/bin/python && \
+    curl -sS https://bootstrap.pypa.io/get-pip.py | python3.9
+
+# validation
+RUN gcc --version | grep "9.3.0" \
+    && bison --version \
+    && curl --version | grep "curl" \
+    && python3.9 --version | grep "3.9" \
+    && cmake --version | grep "cmake version" \
+    && echo "All version checks passed!"
+
+ENV PATH=/usr/local/gcc-9.3.0/bin:/opt/tiger/typhoon-blade:/opt/common_tools:$PATH
+ENV LD_LIBRARY_PATH=/usr/local/gcc-9.3.0/lib64

@@ -1,0 +1,514 @@
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_build_env.py:163] - metadata file is None
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:593] - fetch_all_meta_for_videx. target_db='tpch_tiny' result_dir='temp_meta_1751853101' n_buckets=16 hist_force=True hist_mem_size=200000000 all_table_names=None
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:618] - fetch meta for videx: ndv_single_file = 'videx_tpch_tiny_ndv_single.json' not found in result_dir = 'temp_meta_1751853101', or exist ndv single is not enough.fetch it: sorted(ndv_single_dict.keys()) = [] miss_ndv_tables=['customer', 'lineitem', 'nation', 'orders', 'part', 'partsupp', 'region', 'supplier', 't_users']
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_ACCTBAL [0/8]: SELECT COUNT(DISTINCT C_ACCTBAL) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_ADDRESS [1/8]: SELECT COUNT(DISTINCT C_ADDRESS) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_COMMENT [2/8]: SELECT COUNT(DISTINCT C_COMMENT) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_CUSTKEY [3/8]: SELECT COUNT(DISTINCT C_CUSTKEY) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_MKTSEGMENT [4/8]: SELECT COUNT(DISTINCT C_MKTSEGMENT) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_NAME [5/8]: SELECT COUNT(DISTINCT C_NAME) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_NATIONKEY [6/8]: SELECT COUNT(DISTINCT C_NATIONKEY) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for customer.tpch_tiny.customer.C_PHONE [7/8]: SELECT COUNT(DISTINCT C_PHONE) FROM `tpch_tiny`.`customer`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_COMMENT [0/17]: SELECT COUNT(DISTINCT L_COMMENT) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_COMMITDATE [1/17]: SELECT COUNT(DISTINCT L_COMMITDATE) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_DISCOUNT [2/17]: SELECT COUNT(DISTINCT L_DISCOUNT) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_EXTENDEDPRICE [3/17]: SELECT COUNT(DISTINCT L_EXTENDEDPRICE) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_ID [4/17]: SELECT COUNT(DISTINCT L_ID) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_LINENUMBER [5/17]: SELECT COUNT(DISTINCT L_LINENUMBER) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_LINESTATUS [6/17]: SELECT COUNT(DISTINCT L_LINESTATUS) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_ORDERKEY [7/17]: SELECT COUNT(DISTINCT L_ORDERKEY) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_PARTKEY [8/17]: SELECT COUNT(DISTINCT L_PARTKEY) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_QUANTITY [9/17]: SELECT COUNT(DISTINCT L_QUANTITY) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_RECEIPTDATE [10/17]: SELECT COUNT(DISTINCT L_RECEIPTDATE) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_RETURNFLAG [11/17]: SELECT COUNT(DISTINCT L_RETURNFLAG) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_SHIPDATE [12/17]: SELECT COUNT(DISTINCT L_SHIPDATE) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_SHIPINSTRUCT [13/17]: SELECT COUNT(DISTINCT L_SHIPINSTRUCT) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_SHIPMODE [14/17]: SELECT COUNT(DISTINCT L_SHIPMODE) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_SUPPKEY [15/17]: SELECT COUNT(DISTINCT L_SUPPKEY) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for lineitem.tpch_tiny.lineitem.L_TAX [16/17]: SELECT COUNT(DISTINCT L_TAX) FROM `tpch_tiny`.`lineitem`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for nation.tpch_tiny.nation.N_COMMENT [0/4]: SELECT COUNT(DISTINCT N_COMMENT) FROM `tpch_tiny`.`nation`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for nation.tpch_tiny.nation.N_NAME [1/4]: SELECT COUNT(DISTINCT N_NAME) FROM `tpch_tiny`.`nation`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for nation.tpch_tiny.nation.N_NATIONKEY [2/4]: SELECT COUNT(DISTINCT N_NATIONKEY) FROM `tpch_tiny`.`nation`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for nation.tpch_tiny.nation.N_REGIONKEY [3/4]: SELECT COUNT(DISTINCT N_REGIONKEY) FROM `tpch_tiny`.`nation`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_CLERK [0/9]: SELECT COUNT(DISTINCT O_CLERK) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_COMMENT [1/9]: SELECT COUNT(DISTINCT O_COMMENT) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_CUSTKEY [2/9]: SELECT COUNT(DISTINCT O_CUSTKEY) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_ORDERDATE [3/9]: SELECT COUNT(DISTINCT O_ORDERDATE) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_ORDERKEY [4/9]: SELECT COUNT(DISTINCT O_ORDERKEY) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_ORDERPRIORITY [5/9]: SELECT COUNT(DISTINCT O_ORDERPRIORITY) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_ORDERSTATUS [6/9]: SELECT COUNT(DISTINCT O_ORDERSTATUS) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_SHIPPRIORITY [7/9]: SELECT COUNT(DISTINCT O_SHIPPRIORITY) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for orders.tpch_tiny.orders.O_TOTALPRICE [8/9]: SELECT COUNT(DISTINCT O_TOTALPRICE) FROM `tpch_tiny`.`orders`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_BRAND [0/9]: SELECT COUNT(DISTINCT P_BRAND) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_COMMENT [1/9]: SELECT COUNT(DISTINCT P_COMMENT) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_CONTAINER [2/9]: SELECT COUNT(DISTINCT P_CONTAINER) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_MFGR [3/9]: SELECT COUNT(DISTINCT P_MFGR) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_NAME [4/9]: SELECT COUNT(DISTINCT P_NAME) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_PARTKEY [5/9]: SELECT COUNT(DISTINCT P_PARTKEY) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_RETAILPRICE [6/9]: SELECT COUNT(DISTINCT P_RETAILPRICE) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_SIZE [7/9]: SELECT COUNT(DISTINCT P_SIZE) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for part.tpch_tiny.part.P_TYPE [8/9]: SELECT COUNT(DISTINCT P_TYPE) FROM `tpch_tiny`.`part`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for partsupp.tpch_tiny.partsupp.PS_AVAILQTY [0/6]: SELECT COUNT(DISTINCT PS_AVAILQTY) FROM `tpch_tiny`.`partsupp`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for partsupp.tpch_tiny.partsupp.PS_COMMENT [1/6]: SELECT COUNT(DISTINCT PS_COMMENT) FROM `tpch_tiny`.`partsupp`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for partsupp.tpch_tiny.partsupp.PS_ID [2/6]: SELECT COUNT(DISTINCT PS_ID) FROM `tpch_tiny`.`partsupp`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for partsupp.tpch_tiny.partsupp.PS_PARTKEY [3/6]: SELECT COUNT(DISTINCT PS_PARTKEY) FROM `tpch_tiny`.`partsupp`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for partsupp.tpch_tiny.partsupp.PS_SUPPKEY [4/6]: SELECT COUNT(DISTINCT PS_SUPPKEY) FROM `tpch_tiny`.`partsupp`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for partsupp.tpch_tiny.partsupp.PS_SUPPLYCOST [5/6]: SELECT COUNT(DISTINCT PS_SUPPLYCOST) FROM `tpch_tiny`.`partsupp`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for region.tpch_tiny.region.R_COMMENT [0/3]: SELECT COUNT(DISTINCT R_COMMENT) FROM `tpch_tiny`.`region`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for region.tpch_tiny.region.R_NAME [1/3]: SELECT COUNT(DISTINCT R_NAME) FROM `tpch_tiny`.`region`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for region.tpch_tiny.region.R_REGIONKEY [2/3]: SELECT COUNT(DISTINCT R_REGIONKEY) FROM `tpch_tiny`.`region`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for supplier.tpch_tiny.supplier.S_ACCTBAL [0/7]: SELECT COUNT(DISTINCT S_ACCTBAL) FROM `tpch_tiny`.`supplier`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for supplier.tpch_tiny.supplier.S_ADDRESS [1/7]: SELECT COUNT(DISTINCT S_ADDRESS) FROM `tpch_tiny`.`supplier`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for supplier.tpch_tiny.supplier.S_COMMENT [2/7]: SELECT COUNT(DISTINCT S_COMMENT) FROM `tpch_tiny`.`supplier`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for supplier.tpch_tiny.supplier.S_NAME [3/7]: SELECT COUNT(DISTINCT S_NAME) FROM `tpch_tiny`.`supplier`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for supplier.tpch_tiny.supplier.S_NATIONKEY [4/7]: SELECT COUNT(DISTINCT S_NATIONKEY) FROM `tpch_tiny`.`supplier`;
+2025-07-07 09:51:41 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for supplier.tpch_tiny.supplier.S_PHONE [5/7]: SELECT COUNT(DISTINCT S_PHONE) FROM `tpch_tiny`.`supplier`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for supplier.tpch_tiny.supplier.S_SUPPKEY [6/7]: SELECT COUNT(DISTINCT S_SUPPKEY) FROM `tpch_tiny`.`supplier`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for t_users.tpch_tiny.t_users.age [0/6]: SELECT COUNT(DISTINCT age) FROM `tpch_tiny`.`t_users`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for t_users.tpch_tiny.t_users.city [1/6]: SELECT COUNT(DISTINCT city) FROM `tpch_tiny`.`t_users`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for t_users.tpch_tiny.t_users.created_at [2/6]: SELECT COUNT(DISTINCT created_at) FROM `tpch_tiny`.`t_users`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for t_users.tpch_tiny.t_users.id [3/6]: SELECT COUNT(DISTINCT id) FROM `tpch_tiny`.`t_users`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for t_users.tpch_tiny.t_users.is_active [4/6]: SELECT COUNT(DISTINCT is_active) FROM `tpch_tiny`.`t_users`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:405] - Fetch NDV for t_users.tpch_tiny.t_users.name [5/6]: SELECT COUNT(DISTINCT name) FROM `tpch_tiny`.`t_users`;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_metadata.py:640] - fetch meta for videx: hist_file='videx_tpch_tiny_histogram.json' not found in result_dir='temp_meta_1751853101', or exist hist is not enough.fetch it. sorted(hist_dict.keys())=[] miss_hist_tables=['customer', 'lineitem', 'nation', 'orders', 'part', 'partsupp', 'region', 'supplier', 't_users']
+2025-07-07 09:51:42 [64967:8432295680] WARNING  root            [db_variable.py:79] - version not updated, return empty str
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_ACCTBAL` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_ACCTBAL` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_ACCTBAL WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_ACCTBAL;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_ADDRESS` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_ADDRESS` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_ADDRESS WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_ADDRESS;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_COMMENT` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_COMMENT` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_COMMENT;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_CUSTKEY` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_CUSTKEY` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_CUSTKEY WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='customer', col_name='C_CUSTKEY'
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='customer' col_name='C_CUSTKEY' data_type='int' total_rows=1545 null_values=0.0
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[0]: [25, 9330], bucket_count: 88, bucket_ndv: 88
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[1]: [9421, 18600], bucket_count: 103, bucket_ndv: 103
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[2]: [18791, 28104], bucket_count: 86, bucket_ndv: 86
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[3]: [28194, 37420], bucket_count: 103, bucket_ndv: 103
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[4]: [37627, 46795], bucket_count: 87, bucket_ndv: 87
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[5]: [46894, 56138], bucket_count: 106, bucket_ndv: 106
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[6]: [56417, 65390], bucket_count: 89, bucket_ndv: 89
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[7]: [65670, 74809], bucket_count: 87, bucket_ndv: 87
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[8]: [75078, 84238], bucket_count: 97, bucket_ndv: 97
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[9]: [84380, 93644], bucket_count: 120, bucket_ndv: 120
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[10]: [93742, 102994], bucket_count: 119, bucket_ndv: 119
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[11]: [103080, 112300], bucket_count: 93, bucket_ndv: 93
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[12]: [112470, 121710], bucket_count: 89, bucket_ndv: 89
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[13]: [121774, 131112], bucket_count: 100, bucket_ndv: 100
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[14]: [131175, 140320], bucket_count: 93, bucket_ndv: 93
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='C_CUSTKEY' bucket[15]: [140603, 149869], bucket_count: 85, bucket_ndv: 85
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_CUSTKEY;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_MKTSEGMENT` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_MKTSEGMENT` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_MKTSEGMENT WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_MKTSEGMENT;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_NAME` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_NAME` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_NAME WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_NAME;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_NATIONKEY` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_NATIONKEY` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_NATIONKEY WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_NATIONKEY;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`customer`.`C_PHONE` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`customer`.`C_PHONE` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`customer` UPDATE HISTOGRAM ON C_PHONE WITH 16 BUCKETS;
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`customer` DROP HISTOGRAM ON C_PHONE;
+2025-07-07 09:51:42 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_COMMENT` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_COMMENT` with 16 n_buckets
+2025-07-07 09:51:42 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:51:45 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_COMMENT;
+2025-07-07 09:51:45 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_COMMITDATE` with 16 n_buckets
+2025-07-07 09:51:45 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_COMMITDATE` with 16 n_buckets
+2025-07-07 09:51:45 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_COMMITDATE WITH 16 BUCKETS;
+2025-07-07 09:51:47 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_COMMITDATE;
+2025-07-07 09:51:47 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_DISCOUNT` with 16 n_buckets
+2025-07-07 09:51:47 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_DISCOUNT` with 16 n_buckets
+2025-07-07 09:51:47 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_DISCOUNT WITH 16 BUCKETS;
+2025-07-07 09:51:49 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_DISCOUNT;
+2025-07-07 09:51:49 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_EXTENDEDPRICE` with 16 n_buckets
+2025-07-07 09:51:49 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_EXTENDEDPRICE` with 16 n_buckets
+2025-07-07 09:51:49 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_EXTENDEDPRICE WITH 16 BUCKETS;
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_EXTENDEDPRICE;
+2025-07-07 09:51:51 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_ID` with 16 n_buckets
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_ID` with 16 n_buckets
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_ID WITH 16 BUCKETS;
+2025-07-07 09:51:51 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='lineitem', col_name='L_ID'
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='lineitem' col_name='L_ID' data_type='int' total_rows=59621 null_values=0.0
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[0]: [21, 375107], bucket_count: 3733, bucket_ndv: 3733
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[1]: [375152, 750196], bucket_count: 3728, bucket_ndv: 3728
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[2]: [750514, 1125327], bucket_count: 3672, bucket_ndv: 3672
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[3]: [1125507, 1500489], bucket_count: 3692, bucket_ndv: 3692
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[4]: [1500514, 1875616], bucket_count: 3672, bucket_ndv: 3672
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[5]: [1875621, 2250603], bucket_count: 3766, bucket_ndv: 3766
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[6]: [2251040, 2625845], bucket_count: 3678, bucket_ndv: 3678
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[7]: [2626041, 3000941], bucket_count: 3870, bucket_ndv: 3870
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[8]: [3001064, 3376073], bucket_count: 3765, bucket_ndv: 3765
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[9]: [3376118, 3750896], bucket_count: 3739, bucket_ndv: 3739
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[10]: [3751316, 4126272], bucket_count: 3723, bucket_ndv: 3723
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[11]: [4126500, 4501438], bucket_count: 3725, bucket_ndv: 3725
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[12]: [4501538, 4876532], bucket_count: 3742, bucket_ndv: 3742
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[13]: [4876582, 5251641], bucket_count: 3703, bucket_ndv: 3703
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[14]: [5251738, 5626724], bucket_count: 3784, bucket_ndv: 3784
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='L_ID' bucket[15]: [5626936, 6001946], bucket_count: 3629, bucket_ndv: 3629
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_ID;
+2025-07-07 09:51:51 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_LINENUMBER` with 16 n_buckets
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_LINENUMBER` with 16 n_buckets
+2025-07-07 09:51:51 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_LINENUMBER WITH 16 BUCKETS;
+2025-07-07 09:51:53 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_LINENUMBER;
+2025-07-07 09:51:53 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_LINESTATUS` with 16 n_buckets
+2025-07-07 09:51:53 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_LINESTATUS` with 16 n_buckets
+2025-07-07 09:51:53 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_LINESTATUS WITH 16 BUCKETS;
+2025-07-07 09:51:55 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_LINESTATUS;
+2025-07-07 09:51:55 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_ORDERKEY` with 16 n_buckets
+2025-07-07 09:51:55 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_ORDERKEY` with 16 n_buckets
+2025-07-07 09:51:55 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_ORDERKEY WITH 16 BUCKETS;
+2025-07-07 09:51:57 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_ORDERKEY;
+2025-07-07 09:51:57 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_PARTKEY` with 16 n_buckets
+2025-07-07 09:51:57 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_PARTKEY` with 16 n_buckets
+2025-07-07 09:51:57 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_PARTKEY WITH 16 BUCKETS;
+2025-07-07 09:51:59 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_PARTKEY;
+2025-07-07 09:51:59 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_QUANTITY` with 16 n_buckets
+2025-07-07 09:51:59 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_QUANTITY` with 16 n_buckets
+2025-07-07 09:51:59 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_QUANTITY WITH 16 BUCKETS;
+2025-07-07 09:52:01 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_QUANTITY;
+2025-07-07 09:52:01 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_RECEIPTDATE` with 16 n_buckets
+2025-07-07 09:52:01 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_RECEIPTDATE` with 16 n_buckets
+2025-07-07 09:52:01 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_RECEIPTDATE WITH 16 BUCKETS;
+2025-07-07 09:52:03 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_RECEIPTDATE;
+2025-07-07 09:52:03 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_RETURNFLAG` with 16 n_buckets
+2025-07-07 09:52:03 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_RETURNFLAG` with 16 n_buckets
+2025-07-07 09:52:03 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_RETURNFLAG WITH 16 BUCKETS;
+2025-07-07 09:52:05 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_RETURNFLAG;
+2025-07-07 09:52:05 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_SHIPDATE` with 16 n_buckets
+2025-07-07 09:52:05 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_SHIPDATE` with 16 n_buckets
+2025-07-07 09:52:05 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_SHIPDATE WITH 16 BUCKETS;
+2025-07-07 09:52:07 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_SHIPDATE;
+2025-07-07 09:52:07 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_SHIPINSTRUCT` with 16 n_buckets
+2025-07-07 09:52:07 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_SHIPINSTRUCT` with 16 n_buckets
+2025-07-07 09:52:07 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_SHIPINSTRUCT WITH 16 BUCKETS;
+2025-07-07 09:52:09 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_SHIPINSTRUCT;
+2025-07-07 09:52:09 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_SHIPMODE` with 16 n_buckets
+2025-07-07 09:52:09 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_SHIPMODE` with 16 n_buckets
+2025-07-07 09:52:09 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_SHIPMODE WITH 16 BUCKETS;
+2025-07-07 09:52:11 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_SHIPMODE;
+2025-07-07 09:52:11 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_SUPPKEY` with 16 n_buckets
+2025-07-07 09:52:11 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_SUPPKEY` with 16 n_buckets
+2025-07-07 09:52:11 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_SUPPKEY WITH 16 BUCKETS;
+2025-07-07 09:52:13 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_SUPPKEY;
+2025-07-07 09:52:13 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`lineitem`.`L_TAX` with 16 n_buckets
+2025-07-07 09:52:13 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`lineitem`.`L_TAX` with 16 n_buckets
+2025-07-07 09:52:13 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`lineitem` UPDATE HISTOGRAM ON L_TAX WITH 16 BUCKETS;
+2025-07-07 09:52:14 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`lineitem` DROP HISTOGRAM ON L_TAX;
+2025-07-07 09:52:14 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`nation`.`N_COMMENT` with 16 n_buckets
+2025-07-07 09:52:14 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`nation`.`N_COMMENT` with 16 n_buckets
+2025-07-07 09:52:14 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`nation` UPDATE HISTOGRAM ON N_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`nation` DROP HISTOGRAM ON N_COMMENT;
+2025-07-07 09:52:15 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`nation`.`N_NAME` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`nation`.`N_NAME` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`nation` UPDATE HISTOGRAM ON N_NAME WITH 16 BUCKETS;
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`nation` DROP HISTOGRAM ON N_NAME;
+2025-07-07 09:52:15 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`nation`.`N_NATIONKEY` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`nation`.`N_NATIONKEY` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`nation` UPDATE HISTOGRAM ON N_NATIONKEY WITH 16 BUCKETS;
+2025-07-07 09:52:15 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='nation', col_name='N_NATIONKEY'
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='nation' col_name='N_NATIONKEY' data_type='int' total_rows=25 null_values=0.0
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[0]: [0, 0], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[1]: [1, 1], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[2]: [2, 2], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[3]: [3, 3], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[4]: [4, 4], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[5]: [5, 5], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[6]: [6, 6], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[7]: [7, 7], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[8]: [8, 8], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[9]: [9, 9], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[10]: [10, 10], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[11]: [11, 11], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[12]: [12, 12], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[13]: [13, 13], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[14]: [14, 14], bucket_count: 1, bucket_ndv: 1
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='N_NATIONKEY' bucket[15]: [15, 24], bucket_count: 10, bucket_ndv: 10
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`nation` DROP HISTOGRAM ON N_NATIONKEY;
+2025-07-07 09:52:15 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`nation`.`N_REGIONKEY` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`nation`.`N_REGIONKEY` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`nation` UPDATE HISTOGRAM ON N_REGIONKEY WITH 16 BUCKETS;
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`nation` DROP HISTOGRAM ON N_REGIONKEY;
+2025-07-07 09:52:15 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_CLERK` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_CLERK` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_CLERK WITH 16 BUCKETS;
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_CLERK;
+2025-07-07 09:52:15 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_COMMENT` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_COMMENT` with 16 n_buckets
+2025-07-07 09:52:15 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:52:16 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_COMMENT;
+2025-07-07 09:52:16 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_CUSTKEY` with 16 n_buckets
+2025-07-07 09:52:16 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_CUSTKEY` with 16 n_buckets
+2025-07-07 09:52:16 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_CUSTKEY WITH 16 BUCKETS;
+2025-07-07 09:52:16 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_CUSTKEY;
+2025-07-07 09:52:16 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERDATE` with 16 n_buckets
+2025-07-07 09:52:16 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERDATE` with 16 n_buckets
+2025-07-07 09:52:16 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_ORDERDATE WITH 16 BUCKETS;
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_ORDERDATE;
+2025-07-07 09:52:17 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERKEY` with 16 n_buckets
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERKEY` with 16 n_buckets
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_ORDERKEY WITH 16 BUCKETS;
+2025-07-07 09:52:17 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='orders', col_name='O_ORDERKEY'
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='orders' col_name='O_ORDERKEY' data_type='int' total_rows=15017 null_values=0.0
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[0]: [164, 374533], bucket_count: 920, bucket_ndv: 920
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[1]: [375239, 750118], bucket_count: 915, bucket_ndv: 915
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[2]: [750595, 1124514], bucket_count: 905, bucket_ndv: 905
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[3]: [1125254, 1500100], bucket_count: 987, bucket_ndv: 987
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[4]: [1500390, 1875009], bucket_count: 920, bucket_ndv: 920
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[5]: [1876229, 2249827], bucket_count: 931, bucket_ndv: 931
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[6]: [2250276, 2625029], bucket_count: 938, bucket_ndv: 938
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[7]: [2625154, 2999746], bucket_count: 948, bucket_ndv: 948
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[8]: [3000518, 3374338], bucket_count: 967, bucket_ndv: 967
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[9]: [3375558, 3747936], bucket_count: 971, bucket_ndv: 971
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[10]: [3750081, 4124870], bucket_count: 899, bucket_ndv: 899
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[11]: [4126787, 4499876], bucket_count: 949, bucket_ndv: 949
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[12]: [4500455, 4874311], bucket_count: 944, bucket_ndv: 944
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[13]: [4875395, 5249415], bucket_count: 924, bucket_ndv: 924
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[14]: [5250051, 5622465], bucket_count: 965, bucket_ndv: 965
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='O_ORDERKEY' bucket[15]: [5625283, 5999969], bucket_count: 934, bucket_ndv: 934
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_ORDERKEY;
+2025-07-07 09:52:17 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERPRIORITY` with 16 n_buckets
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERPRIORITY` with 16 n_buckets
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_ORDERPRIORITY WITH 16 BUCKETS;
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_ORDERPRIORITY;
+2025-07-07 09:52:17 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERSTATUS` with 16 n_buckets
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_ORDERSTATUS` with 16 n_buckets
+2025-07-07 09:52:17 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_ORDERSTATUS WITH 16 BUCKETS;
+2025-07-07 09:52:18 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_ORDERSTATUS;
+2025-07-07 09:52:18 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_SHIPPRIORITY` with 16 n_buckets
+2025-07-07 09:52:18 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_SHIPPRIORITY` with 16 n_buckets
+2025-07-07 09:52:18 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_SHIPPRIORITY WITH 16 BUCKETS;
+2025-07-07 09:52:18 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_SHIPPRIORITY;
+2025-07-07 09:52:18 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`orders`.`O_TOTALPRICE` with 16 n_buckets
+2025-07-07 09:52:18 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`orders`.`O_TOTALPRICE` with 16 n_buckets
+2025-07-07 09:52:18 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`orders` UPDATE HISTOGRAM ON O_TOTALPRICE WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`orders` DROP HISTOGRAM ON O_TOTALPRICE;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_BRAND` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_BRAND` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_BRAND WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_BRAND;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_COMMENT` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_COMMENT` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_COMMENT;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_CONTAINER` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_CONTAINER` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_CONTAINER WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_CONTAINER;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_MFGR` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_MFGR` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_MFGR WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_MFGR;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_NAME` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_NAME` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_NAME WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_NAME;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_PARTKEY` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_PARTKEY` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_PARTKEY WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='part', col_name='P_PARTKEY'
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='part' col_name='P_PARTKEY' data_type='int' total_rows=2027 null_values=0.0
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[0]: [16, 12425], bucket_count: 133, bucket_ndv: 133
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[1]: [12578, 24903], bucket_count: 139, bucket_ndv: 139
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[2]: [25014, 37434], bucket_count: 134, bucket_ndv: 134
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[3]: [37536, 49915], bucket_count: 126, bucket_ndv: 126
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[4]: [50018, 62212], bucket_count: 138, bucket_ndv: 138
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[5]: [62655, 74579], bucket_count: 134, bucket_ndv: 134
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[6]: [75286, 87377], bucket_count: 131, bucket_ndv: 131
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[7]: [87518, 99931], bucket_count: 103, bucket_ndv: 103
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[8]: [100100, 112431], bucket_count: 133, bucket_ndv: 133
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[9]: [112806, 124979], bucket_count: 120, bucket_ndv: 120
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[10]: [124994, 137480], bucket_count: 126, bucket_ndv: 126
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[11]: [137564, 149925], bucket_count: 115, bucket_ndv: 115
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[12]: [150063, 162412], bucket_count: 130, bucket_ndv: 130
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[13]: [162567, 174967], bucket_count: 126, bucket_ndv: 126
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[14]: [175129, 187443], bucket_count: 128, bucket_ndv: 128
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='P_PARTKEY' bucket[15]: [187658, 199969], bucket_count: 111, bucket_ndv: 111
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_PARTKEY;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_RETAILPRICE` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_RETAILPRICE` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_RETAILPRICE WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_RETAILPRICE;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_SIZE` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_SIZE` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_SIZE WITH 16 BUCKETS;
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_SIZE;
+2025-07-07 09:52:19 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`part`.`P_TYPE` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`part`.`P_TYPE` with 16 n_buckets
+2025-07-07 09:52:19 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`part` UPDATE HISTOGRAM ON P_TYPE WITH 16 BUCKETS;
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`part` DROP HISTOGRAM ON P_TYPE;
+2025-07-07 09:52:20 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`partsupp`.`PS_AVAILQTY` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`partsupp`.`PS_AVAILQTY` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`partsupp` UPDATE HISTOGRAM ON PS_AVAILQTY WITH 16 BUCKETS;
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`partsupp` DROP HISTOGRAM ON PS_AVAILQTY;
+2025-07-07 09:52:20 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`partsupp`.`PS_COMMENT` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`partsupp`.`PS_COMMENT` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`partsupp` UPDATE HISTOGRAM ON PS_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`partsupp` DROP HISTOGRAM ON PS_COMMENT;
+2025-07-07 09:52:20 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`partsupp`.`PS_ID` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`partsupp`.`PS_ID` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`partsupp` UPDATE HISTOGRAM ON PS_ID WITH 16 BUCKETS;
+2025-07-07 09:52:20 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='partsupp', col_name='PS_ID'
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='partsupp' col_name='PS_ID' data_type='int' total_rows=8005 null_values=0.0
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[0]: [27, 50024], bucket_count: 477, bucket_ndv: 477
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[1]: [50081, 99881], bucket_count: 531, bucket_ndv: 531
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[2]: [100092, 149751], bucket_count: 514, bucket_ndv: 514
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[3]: [150078, 199882], bucket_count: 542, bucket_ndv: 542
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[4]: [200079, 249924], bucket_count: 504, bucket_ndv: 504
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[5]: [250186, 299739], bucket_count: 479, bucket_ndv: 479
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[6]: [300049, 350002], bucket_count: 502, bucket_ndv: 502
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[7]: [350061, 399992], bucket_count: 463, bucket_ndv: 463
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[8]: [400150, 449820], bucket_count: 487, bucket_ndv: 487
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[9]: [450156, 499909], bucket_count: 486, bucket_ndv: 486
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[10]: [500038, 549965], bucket_count: 477, bucket_ndv: 477
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[11]: [550051, 599998], bucket_count: 504, bucket_ndv: 504
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[12]: [600168, 649872], bucket_count: 475, bucket_ndv: 475
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[13]: [650013, 699994], bucket_count: 523, bucket_ndv: 523
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[14]: [700024, 749953], bucket_count: 510, bucket_ndv: 510
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='PS_ID' bucket[15]: [750182, 800004], bucket_count: 531, bucket_ndv: 531
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`partsupp` DROP HISTOGRAM ON PS_ID;
+2025-07-07 09:52:20 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`partsupp`.`PS_PARTKEY` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`partsupp`.`PS_PARTKEY` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`partsupp` UPDATE HISTOGRAM ON PS_PARTKEY WITH 16 BUCKETS;
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`partsupp` DROP HISTOGRAM ON PS_PARTKEY;
+2025-07-07 09:52:20 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`partsupp`.`PS_SUPPKEY` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`partsupp`.`PS_SUPPKEY` with 16 n_buckets
+2025-07-07 09:52:20 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`partsupp` UPDATE HISTOGRAM ON PS_SUPPKEY WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`partsupp` DROP HISTOGRAM ON PS_SUPPKEY;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`partsupp`.`PS_SUPPLYCOST` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`partsupp`.`PS_SUPPLYCOST` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`partsupp` UPDATE HISTOGRAM ON PS_SUPPLYCOST WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`partsupp` DROP HISTOGRAM ON PS_SUPPLYCOST;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`region`.`R_COMMENT` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`region`.`R_COMMENT` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`region` UPDATE HISTOGRAM ON R_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`region` DROP HISTOGRAM ON R_COMMENT;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`region`.`R_NAME` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`region`.`R_NAME` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`region` UPDATE HISTOGRAM ON R_NAME WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`region` DROP HISTOGRAM ON R_NAME;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`region`.`R_REGIONKEY` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`region`.`R_REGIONKEY` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`region` UPDATE HISTOGRAM ON R_REGIONKEY WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='region', col_name='R_REGIONKEY'
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='region' col_name='R_REGIONKEY' data_type='int' total_rows=5 null_values=0.0
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:620] - table_name='region' col_name='R_REGIONKEY' ndv=5 < n_buckets=5, use group by
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`region` DROP HISTOGRAM ON R_REGIONKEY;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`supplier`.`S_ACCTBAL` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`supplier`.`S_ACCTBAL` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`supplier` UPDATE HISTOGRAM ON S_ACCTBAL WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`supplier` DROP HISTOGRAM ON S_ACCTBAL;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`supplier`.`S_ADDRESS` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`supplier`.`S_ADDRESS` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`supplier` UPDATE HISTOGRAM ON S_ADDRESS WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`supplier` DROP HISTOGRAM ON S_ADDRESS;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`supplier`.`S_COMMENT` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`supplier`.`S_COMMENT` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`supplier` UPDATE HISTOGRAM ON S_COMMENT WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`supplier` DROP HISTOGRAM ON S_COMMENT;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`supplier`.`S_NAME` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`supplier`.`S_NAME` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`supplier` UPDATE HISTOGRAM ON S_NAME WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`supplier` DROP HISTOGRAM ON S_NAME;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`supplier`.`S_NATIONKEY` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`supplier`.`S_NATIONKEY` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`supplier` UPDATE HISTOGRAM ON S_NATIONKEY WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`supplier` DROP HISTOGRAM ON S_NATIONKEY;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`supplier`.`S_PHONE` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`supplier`.`S_PHONE` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`supplier` UPDATE HISTOGRAM ON S_PHONE WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`supplier` DROP HISTOGRAM ON S_PHONE;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`supplier`.`S_SUPPKEY` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`supplier`.`S_SUPPKEY` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`supplier` UPDATE HISTOGRAM ON S_SUPPKEY WITH 16 BUCKETS;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='supplier', col_name='S_SUPPKEY'
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='supplier' col_name='S_SUPPKEY' data_type='int' total_rows=100 null_values=0.0
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[0]: [24, 551], bucket_count: 5, bucket_ndv: 5
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[1]: [731, 1242], bucket_count: 6, bucket_ndv: 6
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[2]: [1360, 1857], bucket_count: 8, bucket_ndv: 8
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[3]: [1911, 2497], bucket_count: 11, bucket_ndv: 11
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[4]: [2565, 2976], bucket_count: 7, bucket_ndv: 7
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[5]: [3173, 3693], bucket_count: 5, bucket_ndv: 5
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[6]: [3743, 4354], bucket_count: 5, bucket_ndv: 5
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[7]: [4537, 4933], bucket_count: 4, bucket_ndv: 4
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[8]: [5019, 5540], bucket_count: 5, bucket_ndv: 5
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[9]: [5626, 6081], bucket_count: 10, bucket_ndv: 10
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[10]: [6265, 6779], bucket_count: 5, bucket_ndv: 5
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[11]: [6868, 7436], bucket_count: 6, bucket_ndv: 6
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[12]: [7564, 8001], bucket_count: 4, bucket_ndv: 4
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[13]: [8081, 8663], bucket_count: 10, bucket_ndv: 10
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[14]: [8951, 9239], bucket_count: 4, bucket_ndv: 4
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='S_SUPPKEY' bucket[15]: [9328, 9928], bucket_count: 5, bucket_ndv: 5
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`supplier` DROP HISTOGRAM ON S_SUPPKEY;
+2025-07-07 09:52:21 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`t_users`.`age` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`t_users`.`age` with 16 n_buckets
+2025-07-07 09:52:21 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`t_users` UPDATE HISTOGRAM ON age WITH 16 BUCKETS;
+2025-07-07 09:52:25 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`t_users` DROP HISTOGRAM ON age;
+2025-07-07 09:52:25 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`t_users`.`city` with 16 n_buckets
+2025-07-07 09:52:25 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`t_users`.`city` with 16 n_buckets
+2025-07-07 09:52:25 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`t_users` UPDATE HISTOGRAM ON city WITH 16 BUCKETS;
+2025-07-07 09:52:28 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`t_users` DROP HISTOGRAM ON city;
+2025-07-07 09:52:28 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`t_users`.`created_at` with 16 n_buckets
+2025-07-07 09:52:28 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`t_users`.`created_at` with 16 n_buckets
+2025-07-07 09:52:28 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`t_users` UPDATE HISTOGRAM ON created_at WITH 16 BUCKETS;
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`t_users` DROP HISTOGRAM ON created_at;
+2025-07-07 09:52:31 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`t_users`.`id` with 16 n_buckets
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`t_users`.`id` with 16 n_buckets
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`t_users` UPDATE HISTOGRAM ON id WITH 16 BUCKETS;
+2025-07-07 09:52:31 [64967:8432295680] INFO     root            [videx_histogram.py:767] - Column is covered single uk, force generate: dbname='tpch_tiny', table_name='t_users', col_name='id'
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:703] - table_name='t_users' col_name='id' data_type='int' total_rows=100000 null_values=0.0
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[0]: [1, 6249], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[1]: [6250, 12498], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[2]: [12499, 18747], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[3]: [18748, 24996], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[4]: [24997, 31245], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[5]: [31246, 37494], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[6]: [37495, 43743], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[7]: [43744, 49992], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[8]: [49993, 56241], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[9]: [56242, 62490], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[10]: [62491, 68739], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[11]: [68740, 74988], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[12]: [74989, 81237], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[13]: [81238, 87486], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[14]: [87487, 93735], bucket_count: 6249, bucket_ndv: 6249
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:565] -  col_name='id' bucket[15]: [93736, 100000], bucket_count: 6265, bucket_ndv: 6265
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`t_users` DROP HISTOGRAM ON id;
+2025-07-07 09:52:31 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`t_users`.`is_active` with 16 n_buckets
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`t_users`.`is_active` with 16 n_buckets
+2025-07-07 09:52:31 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`t_users` UPDATE HISTOGRAM ON is_active WITH 16 BUCKETS;
+2025-07-07 09:52:35 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`t_users` DROP HISTOGRAM ON is_active;
+2025-07-07 09:52:35 [64967:8432295680] INFO     root            [videx_histogram.py:815] - Generating Histogram for `tpch_tiny`.`t_users`.`name` with 16 n_buckets
+2025-07-07 09:52:35 [64967:8432295680] DEBUG    root            [videx_histogram.py:760] - Force Generating Histogram for `tpch_tiny`.`t_users`.`name` with 16 n_buckets
+2025-07-07 09:52:35 [64967:8432295680] DEBUG    root            [videx_histogram.py:409] - ANALYZE TABLE `tpch_tiny`.`t_users` UPDATE HISTOGRAM ON name WITH 16 BUCKETS;
+2025-07-07 09:52:38 [64967:8432295680] DEBUG    root            [videx_histogram.py:432] - ANALYZE TABLE `tpch_tiny`.`t_users` DROP HISTOGRAM ON name;
+2025-07-07 09:52:38 [64967:8432295680] INFO     root            [videx_metadata.py:661] - fetch result: all_table_names=['customer', 'lineitem', 'nation', 'orders', 'part', 'partsupp', 'region', 'supplier', 't_users'], result_dir='temp_meta_1751853101'
+2025-07-07 09:52:38 [64967:8432295680] INFO     root            [videx_metadata.py:662] - fetch result: sorted(hist_dict.keys())=['customer', 'lineitem', 'nation', 'orders', 'part', 'partsupp', 'region', 'supplier', 't_users']
+2025-07-07 09:52:38 [64967:8432295680] INFO     root            [videx_metadata.py:663] - fetch result: sorted(ndv_single_dict.keys())=['customer', 'lineitem', 'nation', 'orders', 'part', 'partsupp', 'region', 'supplier', 't_users']
+2025-07-07 09:52:38 [64967:8432295680] INFO     root            [videx_metadata.py:664] - fetch result: sorted(ndv_mulcol_dict.keys())=['customer', 'lineitem', 'nation', 'orders', 'part', 'partsupp', 'region', 'supplier', 't_users']
+2025-07-07 09:54:06 [67640:8432295680] INFO     root            [fetch_metadata.py:75] - post videx metadata to 127.0.0.1:5001
+2025-07-07 09:54:06 [67640:8432295680] INFO     root            [fetch_metadata.py:220] - Build env finished. Your VIDEX server is 127.0.0.1:5001.
+You are running in non-task mode.
+To use VIDEX, please set the following variable before explaining your SQL:
+--------------------
+-- Connect VIDEX-MySQL: mysql -h127.0.0.1 -P13308 -uvidex -ppassword -Dvidex_1
+USE videx_1;
+SET @VIDEX_SERVER='127.0.0.1:5001';
+-- EXPLAIN YOUR_SQL;
+-- Note, if your MySQL version is 5.x, please setup/clear the environment before and after your connecting as follows:
+mysql -h127.0.0.1 -P13308 -uvidex -ppassword < setup_mysql57_env.sql
+mysql -h127.0.0.1 -P13308 -uvidex -ppassword < clear_mysql57_env.sql
+
